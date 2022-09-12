@@ -27,25 +27,20 @@
     --brand-1: #4263EB;
     --brand-2: #364FC7;
 
-    --main-1:#97DFFC;
-    --main-2:#93CAF6;
+    --main-1:#7C6577;
+    --main-2:#33334D;
     --main-3:#8EB5F0;
-    --main-4:#858AE3;
+    --main-4:#0E1124;
     --main-5:#7364D2;
     --main-6:#613DC1;
     --main-7:#5829A7;
-    --main-8:#4E148C;
-    --main-9:#461177;
-    --main-10:#3D0E61;
+    --main-8:#444257;
+    --main-9:#3D0E61;
 
-    --grey-0: #0A0C0D;
-    --grey-1: #212529;
-    --grey-2: #495057;
-    --grey-3: #868E96;
-    --grey-4: #DEE2E6;
+    --border-color:rgb(71, 73, 77);
     
     --grey-opacity-1: rgba(33, 37, 41, 0.5);
-
+    --grey-4:#e5e5e5;
     --white-fixed: #FFFFFF;
 
     --like: #D7443E;
