@@ -18,9 +18,9 @@
          
                 <img class="logo" src="../assets/20.png" alt="Logo"> 
             <div class="headers-buttons">
-                <button class="buttonsWhite">Conhecer nossos parceiros</button>
-                <button class="buttonsWhite">Login</button>
-                <button class="buttonsWhite">Cadastrar-se</button>
+                <button id="joinNoUser" class="buttonsWhite">Conhecer nossos parceiros</button>
+                <button id="loginPg" class="buttonsWhite">Login</button>
+                <button id="signUpPg" class="buttonsWhite">Cadastrar-se</button>
            </div>
         </header><!-- header -->
     <main class="conteinerBanner">
@@ -31,19 +31,19 @@
                 </h2> 
                 <form class="form">
                         <label for="Nome">Nome</label>
-                        <input class="inputDefault" placeholder="Nome" type="text" id="email" required>
+                        <input id="inputName" class="inputDefault" placeholder="Nome" type="text" required>
 
                         <label for="email">E-mail</label>
-                        <input class="inputDefault" placeholder="E-mail" type="email" id="password" required>
+                        <input id="inputEmail" class="inputDefault" placeholder="E-mail" type="email" required>
 
                         <label for="text">Qual seu nivel de experiencia?</label>
-                        <input class="inputDefault" placeholder="Senior, plano, junior" type="text" id="email" required>
+                        <input id="inputEx" class="inputDefault" placeholder="sênior, pleno, junior" type="text" required>
 
                         <label for="password">Senha</label>
-                        <input class="inputDefault" placeholder="Senha" type="password" id="password" required>
+                        <input id="inputPassword" class="inputDefault" placeholder="Senha" type="password" required>
 
-                        <button class="buttonsGrey" type="submit">Entrar</button>
-                        <p>Not have an account yet ? <a href="../index.html">Make your resgistration!</a></p>
+                        <button id="btnSubmit" class="buttonsGrey" type="submit">Entrar</button>
+                        <p>Ja possui uma conta cadastrada? <span id="loginPg2" >Click aqui</span></p>
                 </form>
             </div><!-- form -->
       
@@ -58,5 +58,7 @@
         
         </div><!-- center -->
     </div><!-- vonteinerBottom -->
+
+    <script type="module" src="../scripts/login/signup.js"></script>
     </body>
 </html>
