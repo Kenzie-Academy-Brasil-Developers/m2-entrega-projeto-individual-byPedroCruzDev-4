@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-position: inside;
+    text-decoration: none;
+    font-family: 'Open Sans';
+}
+@font-face {
+    src: url('../Noto_Sans/NotoSans-Regular.ttf');
+    font-family:"Open Sans";
+}
+body{
+    width: 100%;
+}
+
+.logo{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 10px;
+}
+
+.buttonsWhite{
+    background-color: rgba(38, 39, 41, 0);
+    border: none;
+    color: white;
+
+    font-size: 0.8rem;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.conteinerBanner{
+    
+    width: 100%;
+    height: 557px;
+    background-image: url('../assets/moon.jpg');  
+    background-size: cover;
+    background-position: center;
+
+}
+.form-area{
+    margin: 0 auto;
+    width: 400px;
+    height:calc(100% + 30px);
+    position: relative;
+    top: -15px;
+    background-color: rgba(38,39,41,0.888);
+    border: solid 2px rgb(71, 73, 77);
+    border-radius: 5px;
+    box-shadow: 1px 5px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.form-area h2{
+    
+    color: white;
+    font-size: 15px;
+    margin-top: 50px;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 55px auto;
+
+}
+.form label{
+    color: white;
+    margin: 10px auto;
+}
+
+.inputConteiner label, p{
+    display: inline-block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin: 5px 0;
+}
+form > p{
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+}
+.coneiternerBottom {
+  margin-top: -40px;
+    background-color: rgb(38,39,41);
+    width: 100%;
+    height: 40vh;
+}
+.coneiternerBottom .center {
+    width: 90%;
+    margin: 0 auto;
+}
+.coneiternerBottom .center h2{
+    padding-top: 40px ;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width:500px){
+    .headers-buttons{
+        width: 400px;
+        height: 100%;
+        overflow-x: auto;
+    }
+    
+    .form-area{
+        width: 80%;
+    }
+    .form{
+        width: 80%;
+    }
+}

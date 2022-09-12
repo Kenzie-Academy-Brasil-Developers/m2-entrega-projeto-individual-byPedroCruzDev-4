@@ -1,0 +1,128 @@
+/* text */
+:root{
+    --title-1-size: 1.8rem;
+    --title-1-weight:700;
+    --title-1-height: 2.5rem;
+
+    --title-2-size: 1.4rem;
+    --title-2-weight:600;
+    --title-2-height: 1.8rem;
+
+    --text-1-size: 1rem;
+    --text-1-weight:400;
+    --text-1-height: 1.8rem;
+
+    --text-2-size: 0.9rem;
+    --text-2-weight:400;
+    --text-2-height: 1.2rem;
+
+    --text-3-size: 0.8rem;
+    --text-3-weight:400;
+    --text-3-height: 1rem;
+
+}
+
+/* colors */
+:root{
+    --brand-1: #4263EB;
+    --brand-2: #364FC7;
+
+    --main-1:#97DFFC;
+    --main-2:#93CAF6;
+    --main-3:#8EB5F0;
+    --main-4:#858AE3;
+    --main-5:#7364D2;
+    --main-6:#613DC1;
+    --main-7:#5829A7;
+    --main-8:#4E148C;
+    --main-9:#461177;
+    --main-10:#3D0E61;
+
+    --grey-0: #0A0C0D;
+    --grey-1: #212529;
+    --grey-2: #495057;
+    --grey-3: #868E96;
+    --grey-4: #DEE2E6;
+    
+    --grey-opacity-1: rgba(33, 37, 41, 0.5);
+
+    --white-fixed: #FFFFFF;
+
+    --like: #D7443E;
+}
+
+/* Buttons */
+:root{
+    --button-heigth: 35px;
+    --button-width:  50%;
+
+    --button-color-1: rgb(38,39,41);;
+    --button-color-2: #FFFFFF;
+
+    --button-border: solid 1px black;
+}
+
+.buttonsGeneralBlue{
+    
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(71, 73, 77);
+    border: solid 1px white;
+    color: white;
+    cursor: pointer;
+}
+
+.buttonsGrey{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: rgb(71, 73, 77);
+    border: solid 1px white;
+    font-size: var(--text-2-size);
+    color: white;
+    cursor: pointer;
+}
+/* inputs */
+:root{
+    --input-width: 100%;
+    --input-heigth: 40px;
+
+    --border-radius: 4px;
+
+    --outline-color: #93CAF6;
+
+    --textarea-width: 600px;
+    --textarea-heigth: 130px;
+    --textarea-color:#495057;
+}   
+
+.inputDefault{
+    width: var(--input-width);
+    height: var(--input-heigth);
+
+    background-color: var(--grey-4);
+    color: var(--grey-2);
+
+    border-radius: var(--border-radius);
+    border: none;
+    
+    outline-color: var(--outline-color);
+
+    font-size: var(--text-1-size);
+    font-weight: 19px;
+    line-height: 100%;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color:rgb(38,39,41);
+   
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
