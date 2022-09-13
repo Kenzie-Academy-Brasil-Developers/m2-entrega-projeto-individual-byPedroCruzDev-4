@@ -4,41 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenzie Business</title>
+    <title>business</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/styles/reset.css">
-    <link rel="stylesheet" href="./src/styles/global.css">
-    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/business.css">
  
 </head>
     <body>
         <header class="header">
          
-                <img class="logo" src="./src/assets/20.png" alt="Logo"> 
+                <img class="logo" src="../assets/20.png" alt="Logo"> 
             <div class="headers-buttons">
-                <button id="allBusiness" class="buttonsWhite">Nossas Empresas</button> 
+                <button id="allBusiness" class="buttonsWhite">Todas Empresas</button> 
+                <button id="foodH" class="buttonsWhite">Alimenticio</button> 
+                <button id="carH" class="buttonsWhite">Automotiva</button> 
+                <button id="tiH" class="buttonsWhite">TI</button> 
                 <button id="loginPg" class="buttonsWhite">Login</button>
                 <button id="signUpPg" class="buttonsWhite">Cadastrar-se</button>
            </div>
         </header><!-- header -->
     <main class="conteinerBanner">
-      
-            <div class="form-area">
-                <h2>
-                    Faça seu login aqui!!
-                </h2> 
-                <form class="form">
-                        <label for="Email">E-mail</label>
-                        <input id="inputEmail" class="inputDefault" type="email" required>
-                        <label  for="password">Password</label>
-                        <input id="inputPassword" class="inputDefault" type="password" required>
+        
+        <div  class="business-area">
+            <h1 id="title" class="title">Lista de Empresas</h1>
+           <ul id="render-section"> 
+           <!--  <li class="card">
+               <h2>Skinas Lanches</h2>
+               <h4>Abre as 09:00Horas</h4>
+               <span>Podrão de qualidade</span>
+               <p>Tipo: Alimenticio</p> 
+            </li> -->
+         </ul>
+        </div>
 
-                        <button id="btnSubmit" class="buttonsGrey" type="submit">Entrar</button>
-                        <p>Ainda não possui cadastro ? <span id="signUpPg2">Click aqui!</a></p>
-                </form>
-            </div><!-- form -->
       
     </main><!-- conteinerBanner -->
     <div class="coneiternerBottom">
@@ -50,15 +51,9 @@
             </p>
         
         </div><!-- center -->
-        <div class="business-section">
-            <h3>Nossas Empresas</h3>
-            <div class="business">
-                <button id="allBusinessB" class="buttonsWhite">Click e Veja</button> 
-            </div>
-        </div>
-        
+
     </div><!-- vonteinerBottom -->
 
-    <script type="module" src="./src/scripts/login/login.js"></script>
+    <script type="module" src="../scripts/login/allBusiness.js"></script>
     </body>
 </html>

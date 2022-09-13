@@ -93,7 +93,14 @@ form p span{
     color: white;
     text-align: center;
 }
-
+.business-section h3{
+    font-size: var(--text-1-size);
+    width: 100%;
+    color: white;
+}
+.business-section .business{
+    margin: 30px auto;
+}
 @media (max-width:500px){
     .headers-buttons{
         width: 400px;

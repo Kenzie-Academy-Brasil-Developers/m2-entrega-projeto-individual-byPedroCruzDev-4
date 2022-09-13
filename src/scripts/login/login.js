@@ -2,12 +2,16 @@ import{HomeApi} from './homeApi.js'
 
 
 console.log('hello')
-class Login{
+class LoginPage{
     static headerButtons(){
         const login  = document.getElementById('loginPg')
         const signup = document.getElementById('signUpPg')
         const signup2= document.getElementById('signUpPg2')
-        const noUser = document.getElementById('joinNoUser')
+        const allBusiness= document.getElementById('allBusiness')
+
+        allBusiness.addEventListener('click', ()=>{
+            window.location.assign('./src/pages/allBusiness.html')
+        })
 
         signup.addEventListener('click', (e) => {
             e.preventDefault()
@@ -37,6 +41,15 @@ class Login{
         })
 
     }
+
+    static companies(){
+        const allBusiness = document.getElementById('allBusinessB')
+
+        allBusiness.addEventListener('click', (e)=>{
+            window.location.assign('./src/pages/allBusiness.html')
+        })
+    }
 }
-Login.headerButtons()
-Login.loginUser()
+LoginPage.headerButtons()
+LoginPage.loginUser()
+LoginPage.companies()

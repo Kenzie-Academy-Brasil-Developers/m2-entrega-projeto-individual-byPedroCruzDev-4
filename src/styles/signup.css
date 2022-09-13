@@ -8,17 +8,6 @@ body{
     height: 2.5rem;
     margin-left: 10px;
 }
-
-.buttonsWhite{
-    background-color: rgba(38, 39, 41, 0);
-    border: none;
-    color: white;
-
-    font-size: 0.8rem;
-    margin: 0 10px;
-    cursor: pointer;
-}
-
 .conteinerBanner{
     
     width: 100%;
@@ -102,7 +91,7 @@ form p span{
   margin-top: -40px;
     background-color: rgb(38,39,41);
     width: 100%;
-    height: 40vh;
+    height: 60vh;
 }
 .coneiternerBottom .center {
     width: 90%;
@@ -112,6 +101,14 @@ form p span{
     padding-top: 40px ;
     color: white;
     text-align: center;
+}
+.business-section h3{
+    font-size: var(--text-1-size);
+    width: 100%;
+    color: white;
+}
+.business-section .business{
+    margin: 30px auto;
 }
 
 @media (max-width:500px){
