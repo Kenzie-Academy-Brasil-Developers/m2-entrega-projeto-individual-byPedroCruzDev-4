@@ -1,11 +1,22 @@
-
+import { BusinessArea } from "./allBusiness.js"
 export class HomeApi{
     static baseUrl = 'http://localhost:6278'
     static token   = localStorage.getItem('@KenzieBusiness:token')
     static headers = {
         'Content-type' : 'application/json',
         Athorization   : `Bearer ${this.token}`
-    } 
+    }
+
+    static async companies(){
+        return await fetch(`${this.baseUrl}/companies`,{
+            method: "GET",
+            headers: this.headers
+        })
+        .then(res => res.json())
+        .then(resp => BusinessArea.renderBusiness(resp))
+        .catch(err => console.log(err))
+        
+    }
 
     static async signup(obj){
         return await fetch(`${this.baseUrl}/auth/register/user`,{
@@ -48,3 +59,5 @@ export class HomeApi{
         .catch(err => console.log(err))
     }
 }
+
+console.log(HomeApi.companies())

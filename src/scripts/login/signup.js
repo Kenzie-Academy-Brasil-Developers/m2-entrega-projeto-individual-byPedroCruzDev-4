@@ -2,19 +2,23 @@ import {HomeApi} from './homeApi.js'
 
 class signUpPage{
     static headerButtons (){
-        const login = document.getElementById('loginPg')
-        const login2= document.getElementById('loginPg2')
-        const signup= document.getElementById('signUpPg')
-        const noUser= document.getElementById('joinNoUser')
+        const login      = document.getElementById('loginPg')
+        const login2     = document.getElementById('loginPg2')
+        const signup     = document.getElementById('signUpPg')
+        const allBusiness= document.getElementById('allBusiness')
+
+        allBusiness.addEventListener('click', ()=>{
+            window.location.assign('./allBusiness.html')
+        })
 
         login.addEventListener('click', (e) => {
             e.preventDefault()
-            console.log(e)
+           
             window.location.assign('../../index.html')
         })
         login2.addEventListener('click', (e) => {
             e.preventDefault()
-            console.log(e)
+            
             window.location.assign('../../index.html')
         })
     }
@@ -41,7 +45,14 @@ class signUpPage{
         })
 
     }
-}
+    static companies(){
+        const allBusiness = document.getElementById('allBusinessB')
 
+        allBusiness.addEventListener('click', (e)=>{
+            window.location.assign('./allBusiness.html')
+        })
+    }
+}
+signUpPage.companies()
 signUpPage.headerButtons()
 signUpPage.signup()
