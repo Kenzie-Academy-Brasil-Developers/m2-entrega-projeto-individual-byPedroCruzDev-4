@@ -1,0 +1,15 @@
+:root {
+    --base_princ: #ffffff;
+    --base1: #dddddd;
+    --base2: #7364D2;
+    --base3: #613DC1;
+    --base4: #d3dcfa;
+    --sec_princ: #534863;
+    --sec1: #eae8fa;
+    --sec2: #302752;
+    --sec3: #231c2c;
+    --sec4: #220049;
+    --font1: "Inter:wght@700", sans-serif;
+    --font2: "Inter:wght@600", sans-serif;
+    --font3: "Inter:wght@400", sans-serif;
+}
