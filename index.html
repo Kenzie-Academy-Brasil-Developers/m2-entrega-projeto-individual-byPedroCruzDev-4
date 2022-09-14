@@ -1,64 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenzie Business</title>
+    <title>HomePage</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/styles/reset.css">
-    <link rel="stylesheet" href="./src/styles/global.css">
-    <link rel="stylesheet" href="./src/styles/index.css">
- 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" 
+    rel="stylesheet"> 
+
+    <link rel="stylesheet" href="./styles/styleBase/reset.css">
+    <link rel="stylesheet" href="./styles/styleBase/global.css">
+    <link rel="stylesheet" href="./styles/homePge/modalCerto.css">
+    <link rel="stylesheet" href="./styles/homePge/modalErro.css">
+    <link rel="stylesheet" href="./styles/homePge/homePage.css">
+    <link rel="stylesheet" href="./styles/homePge/login.css">
+    <link rel="stylesheet" href="./styles/homePge/cadastro.css">
 </head>
-    <body>
-        <header class="header">
-         
-                <img class="logo" src="./src/assets/20.png" alt="Logo"> 
-            <div class="headers-buttons">
-                <button id="allBusiness" class="buttonsWhite">Nossas Empresas</button> 
-                <button id="loginPg" class="buttonsWhite">Login</button>
-                <button id="signUpPg" class="buttonsWhite">Cadastrar-se</button>
-           </div>
-        </header><!-- header -->
-    <main class="conteinerBanner">
-      
-            <div class="form-area">
-                <h2>
-                    Faça seu login aqui!!
-                </h2> 
-                <form class="form">
-                        <label for="Email">E-mail</label>
-                        <input id="inputEmail" class="inputDefault" type="email" required>
-                        <label  for="password">Password</label>
-                        <input id="inputPassword" class="inputDefault" type="password" required>
-
-                        <button id="btnSubmit" class="buttonsGrey" type="submit">Entrar</button>
-                        <p>Ainda não possui cadastro ? <span id="signUpPg2">Click aqui!</a></p>
-                </form>
-            </div><!-- form -->
-      
-    </main><!-- conteinerBanner -->
-    <div class="coneiternerBottom">
-        <div class="center">
-        
-            <h2>Sobre Nos</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus saepe commodi sit inventore quis iusto veritatis harum esse nihil repellat! Ducimus perferendis saepe aliquam quae nostrum mollitia consectetur tenetur voluptates.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus saepe commodi sit inventore quis iusto veritatis harum esse nihil repellat! Ducimus perferendis saepe aliquam quae nostrum mollitia consectetur tenetur voluptates.
-            </p>
-        
-        </div><!-- center -->
-        <div class="business-section">
-            <h3>Nossas Empresas</h3>
-            <div class="business">
-                <button id="allBusinessB" class="buttonsWhite">Click e Veja</button> 
-            </div>
+<body>
+    <nav class="nav">
+        <div id="hamburguer" class="active">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>         
         </div>
-        
-    </div><!-- vonteinerBottom -->
+        <div class="links">
+            <button id="login">Login</button>
+            <button id="cadastro">Cadastre-se</button>
+        </div>
+    </nav>
+    <main class="main">
+        <section id="navegador" class="filters">
+            <div class="filtersContainer">
+     
+            </div>
+        </section>
+    </main>
+    
+    <section class="centro">
+        <h1>Kenzie Business Home</h1>
+    </section>
 
-    <script type="module" src="./src/scripts/login/login.js"></script>
-    </body>
+            <div id="loginModal" class="login hidden">
+                <form class="formLogin"> 
+                    <h1>Login</h1>
+                        <input id="email_login" type="email" placeholder="Digite seu e-mail" /> 
+                        <input id="pass_login" type="password" placeholder="Digite sua senha"/>
+                    <button id="logar">Logar</button>
+                </form>
+            </div>
+
+
+            <div id="cadastroModal" class="cadastro hidd">
+                <form class="formCadastro">
+                    <h1>Cadastro</h1> 
+
+                    <input id="nome_cad" type="text" placeholder="Digite seu nome" />
+                    <input id="email_cad" type="email" placeholder="Digite seu e-mail"/> 
+                    <input id="nivel_cad" type="text" placeholder="Seu nível profissional"/> 
+                    <input id="senha_cad" type="password" placeholder="Digite sua senha"/>
+                    <button id="cadastrar">Cadastrar</button>
+                </form>
+            </div>
+            
+    <section class="sectionEmpresas">
+    </section>
+
+    <div id="modal" class="show hid">
+        <div class="containerModal">
+            <h2>Acesso não autorizado</h2>
+            <p>E-mail ou senha inválidos!!!</p>
+            <button id="entendi">X</button>
+        </div>
+    </div>
+
+    <div id="modalCerto" class="showCerto hdd">
+        <div class="containerModalCerto">
+            <h2>Sucesso!!!</h2>
+            <p>Usuário Cadastrado</p>
+            <button id="entendiCerto">X</button>
+        </div>
+    </div>
+
+    <script type="module" src="./script/homePage/modaisLogCad.js"></script>
+    <script type="module" src="./script/homePage/modais.js"></script>
+    <script type="module" src="./script/homePage/signup.js"></script>
+    <script type="module" src="./script/homePage/listar.js"></script>
+</body>
 </html>
